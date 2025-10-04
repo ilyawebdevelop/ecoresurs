@@ -1,0 +1,55 @@
+.about {
+  &Img {
+    img {
+      width: 100%;
+      height: 460px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+}
+
+.aboutAdv {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 70px;
+  margin-top: 45px;
+
+  &Item {
+    grid-column: 4 span;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    position: relative;
+    &:not(:last-child){
+      &::after {
+        content: '';
+        height: 61px;
+        width: 1px;
+        background-color: #4DB958;
+        position: absolute;
+        right: -17px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &:first-child{
+      &::after {
+        right: 20px;
+      }
+    }
+   
+    &Count {
+      color: #02550A;
+      font-family: var(--font-family-inter);
+      font-size: 70px;
+      line-height: normal;
+      white-space: nowrap;
+    }
+    &Text {
+      max-width: 205px;
+      font-size: 18px;
+      line-height: normal;
+    }
+  }
+}

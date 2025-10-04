@@ -1,0 +1,113 @@
+.steps {
+  .sectDescr {
+    max-width: 600px;
+  }
+  &Slider {
+    overflow: visible;
+  }
+
+  &Slide {
+    transition: background-color .2s linear;
+    padding-top: 25px;
+    border-radius: 10px;
+    background-color: #F3F6E7;
+    min-height: 545px;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      background-color: var(--green-dark);
+
+      .stepsSlideContacts {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .stepsSlideTitle {
+        color: #fff;
+      }
+      .stepsSlideCount {
+        color: #fff;
+      }
+      .stepsSlideDescr {
+        color: #fff;
+      }
+
+    }
+
+    &Head {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    &Title {
+      font-size: 22px;
+      line-height: normal;
+      font-weight: 600;
+      color: var(--green-dark);
+      max-width: 265px;
+      transition: color .2s linear;
+    }
+
+    &Count {
+      flex-shrink: 0;
+      color: var(--green-dark);
+      font-size: 40px;
+      font-weight: 600;
+      font-family: var(--font-family-title);
+      transition: color .2s linear;
+    }
+
+    &Contacts {
+      opacity: 0;
+      visibility: hidden;
+      transition: visibility .2s linear, opacity .2s linear;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    &Descr {
+      transition: color .2s linear;
+      font-size: 18px;
+      line-height: 25px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    &Phone {
+      color: #FEFFF8;
+      font-size: 20px;
+      font-family: var(--font-family-title);
+      font-weight: 600;
+      &:hover {
+        color: #fff;
+      }
+    }
+    &Img {
+      width: 100%;
+      margin-top: auto;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      z-index: -1;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    &.active {
+      background-color: var(--green-dark);
+      .stepsSlideContacts {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .stepsSlideTitle {
+        color: #fff;
+      }
+      .stepsSlideCount {
+        color: #fff;
+      }
+      .stepsSlideDescr {
+        color: #fff;
+      }
+    }
+  }
+}

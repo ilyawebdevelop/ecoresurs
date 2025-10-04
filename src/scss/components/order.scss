@@ -1,0 +1,32 @@
+.order {
+  background-color: #F3F6E7;
+  .container {
+    position: relative;
+  }
+  &Form {
+    border-radius: 10px;
+    background:  #FEFFF8;
+    padding: 25px;
+    position: relative;
+    z-index: 1;
+  }
+  .sectDescr{
+    max-width: 470px;
+  }
+  &Img {
+    border-radius: 10px;
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .abstr-top{
+    position: absolute;
+    top: -120px;
+    left: -70px;
+  }
+  .abstr-bottom {
+    position: absolute;
+    bottom: -100px;
+    right: -70px;
+  }
+}

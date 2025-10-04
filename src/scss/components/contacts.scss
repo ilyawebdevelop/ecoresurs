@@ -1,0 +1,34 @@
+.contacts {
+  &Col {
+    grid-column: 6 span;
+
+    &W {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 24px;
+    }
+  }
+
+  &Phone {
+    font-family: var(--font-family-title);
+    &:hover {
+      color: var(--main-color);
+    }
+  }
+
+  &Item {
+    margin-bottom: 45px;
+    // min-height: 100px;
+  }
+  .socials {
+    img {
+      width: 38px;
+    }
+  }
+}
+.maps__map {
+  height: 330px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}

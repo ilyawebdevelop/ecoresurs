@@ -1,0 +1,24 @@
+.trust {
+  .sectHead {
+    margin-bottom: 60px;
+  }
+}
+.partnersSlider {
+  overflow: visible;
+  .swiper-wrapper {
+    align-items: center;
+  }
+
+  .swiper-slide {
+    width: fit-content;
+    border-radius: 10px;
+    background: #FEFFF8;
+    height: 110px;
+    width: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

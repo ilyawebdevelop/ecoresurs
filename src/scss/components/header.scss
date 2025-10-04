@@ -1,0 +1,67 @@
+// Header
+.header {
+  position: absolute;
+  top: 35px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  background: rgba(243, 246, 231, 0.85);
+  width: 100%;
+  max-width: 1460px;
+  border-radius: 10px;
+  z-index: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .logo {
+    &:hover {
+      opacity: .7;
+    }
+    img {
+      width: 160px;
+    }
+  }
+  .button {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 43px;
+  }
+  &Nav {
+    &>ul {
+      display: flex;
+      column-gap: 34px;
+      &>li {
+        &.has-menu-children {
+          &>a {
+            padding-right: 12px;
+            background: url('@img/icons/menu-arrow.svg') no-repeat right center / 7px;
+          
+          }
+        }
+        &>a {
+          font-weight: 500;
+          &:hover {
+            color: var(--green-dark);
+          }
+        }
+      }
+    }
+  }
+}
+.headerCallFree{
+  font-size: 12px;
+  line-height: normal;
+  color: #656565;
+  display: block;
+}
+.headerPhone {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  &:hover {
+    color: var(--green-dark);
+  }
+}
+.sub-menu {
+  display: none;
+}

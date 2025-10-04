@@ -1,0 +1,40 @@
+.services {
+  &Card {
+    border-radius: 10px;
+    background-color: #F3F6E7;
+    height: 100%;
+    display: block;
+    transition: background-color .2s linear;
+    &:hover {
+      background-color: var(--green-light);
+      .servicesCardTitle{
+        color: #fff;
+      }
+    }
+
+    &Img {
+
+      img {
+        height: 190px;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    }
+
+    &Content {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    &Title {
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 500;
+      transition: color .2s linear;
+    }
+  }
+}

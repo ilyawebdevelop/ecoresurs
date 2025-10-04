@@ -1,0 +1,32 @@
+.doc {
+  &Slider {
+    overflow: visible;
+  }
+
+  .sectDescr {
+    max-width: 700px;
+  }
+
+  .sectHead {
+    margin-bottom: 60px;
+  }
+
+  &Slide {
+    border-radius: 10px;
+    background: #FFF;
+    transition: opacity .2s linear;
+    transition: box-shadow .2s linear;
+
+    &:hover {
+
+      box-shadow: 4px 4px 9.3px 0 rgba(0, 0, 0, 0.18);
+    }
+
+    img {
+      height: 480px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+}

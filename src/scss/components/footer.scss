@@ -1,0 +1,75 @@
+// Footer
+.footer {
+  background-color: var(--green-dark);
+  padding-top: 40px;
+  padding-bottom: 150px;
+  position: relative;
+  color: #FEFFF8;
+  &Logo {
+    img {
+      width: 155px;
+    }
+  }
+  &LogoLg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  &T {
+    display: flex;
+    column-gap: 300px;
+  }
+  &B {
+    padding-top: 50px;
+  }
+  &Link {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: transparent;
+    transition: text-decoration-color .2s linear;
+    &:hover {
+      text-decoration-color: #FEFFF8;
+      text-decoration: underline;
+    }
+  }
+  &Nav {
+    &W {
+      display: flex;
+      column-gap: 200px;
+      padding-top: 22px;
+    }
+    &Title {
+      margin-bottom: 20px;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    ul {
+      li {
+        margin-bottom: 10px;
+        a {
+          font-weight: 500;
+          text-decoration: underline;
+          text-underline-offset: 3px;
+          text-decoration-color: transparent;
+          transition: text-decoration-color .2s linear;
+          &:hover {
+            text-decoration-color: #FEFFF8;
+          }
+        }
+      }
+    }
+  }
+  .develop {
+    color: #FEFFF8;  
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;    
+    a {
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}

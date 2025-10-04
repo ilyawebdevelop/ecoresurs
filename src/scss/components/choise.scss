@@ -1,0 +1,55 @@
+.choise {
+  overflow: hidden;
+  .sectHead {
+    margin-bottom: 60px;
+  }
+  &Grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    position: relative;
+  }
+
+  &Item {
+    grid-column: 3 span;
+    border-radius: 10px;
+    background: #FEFFF8;
+    position: relative;
+    z-index: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    &:nth-child(2){
+      opacity: 0;
+    }
+    &:nth-child(7){
+      opacity: 0;
+    }
+    &Icon {
+      width: 42px;
+      margin-bottom: 25px;
+    }
+    &Title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    &Descr {
+      font-size: 18px;
+      line-height: 25px;
+      margin-top: auto;
+    }
+  }
+
+  &Planet {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 795px;
+    animation: spin 185s linear infinite;
+  }
+}
