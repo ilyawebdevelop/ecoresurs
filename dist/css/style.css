@@ -2495,6 +2495,10 @@ section {
   max-width: 100%;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -2729,6 +2733,32 @@ h3, .h3 {
   font-size: 20px;
 }
 
+.aioseo-breadcrumbs {
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 15px;
+  -moz-column-gap: 15px;
+  column-gap: 15px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  color: var(--green-dark);
+  font-weight: 500;
+}
+
+.aioseo-breadcrumbs a {
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+  color: var(--gray);
+}
+
+.aioseo-breadcrumbs a:hover {
+  color: #000;
+}
+
 /* Hamburger Menu */
 .hamburger {
   align-self: center;
@@ -2835,6 +2865,13 @@ h3, .h3 {
   padding-left: 20px;
   padding-right: 20px;
 }
+.header--standart {
+  background: transparent;
+  position: static;
+  padding-top: 30px;
+  padding-left: 0;
+  padding-right: 0;
+}
 .header .logo:hover {
   opacity: 0.7;
 }
@@ -2872,6 +2909,7 @@ h3, .h3 {
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
+  text-align: end;
 }
 .headerPhone:hover {
   color: var(--green-dark);
@@ -3327,6 +3365,10 @@ h3, .h3 {
 }
 .stepsSlide.active .stepsSlideDescr {
   color: #fff;
+}
+
+.reqItem {
+  margin-bottom: 10px;
 }
 
 .footer {

@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/head.html',{
-"title":"Главная"
+"title":"О компании"
 })
 
 <body>
 	
 	<div class="wrapper">
-		@@include('html/header-main.html',{})
+		@@include('html/header.html',{})
 		<main class="main">		
-			@@include('html/main/intro.html',{})
-			@@include('html/main/services.html',{})
-			@@include('html/main/about.html',{})
-			@@include('html/portfolio.html',{})
+			@@include('html/breadcrumbs.html',{})
+			@@include('html/about/content.html',{})
+
 			@@include('html/trust.html',{})
-			@@include('html/choise.html',{})
 			@@include('html/doc.html',{})
-			@@include('html/main/steps.html',{})
 			@@include('html/blag.html',{})
 			@@include('html/order.html',{})
 			@@include('html/contacts.html',{})
