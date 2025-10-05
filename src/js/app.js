@@ -100,6 +100,32 @@ document.querySelectorAll('.docSlider').forEach(n => {
   });
 });
 
+// Инициализация слайдера transportSlider
+const transportSlider = document.querySelector('.transportSlider');
+var mySwiperTransport = new Swiper(transportSlider, {
+  slidesPerView: 3,
+  speed: 800,
+  spaceBetween: 40,
+  autoplay: {
+    delay: 3000,
+  },
+  navigation: {
+    prevEl: stepsSlider?.closest('.sliderW').querySelector('.navArrowPrev'),
+    nextEl: stepsSlider?.closest('.sliderW').querySelector('.navArrowNext'),
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },  
+    1400: {
+      slidesPerView: 3,
+    },
+  },
+});
+
 function map() {
   const contactsMap = document.querySelector(".maps__map");
   if (contactsMap) {

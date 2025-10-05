@@ -1,0 +1,38 @@
+.transport {
+  .navArrowW {
+    display: none;
+    @media(max-width: 991px){
+      display: flex;
+    }
+  }
+  &Slide {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    &Img {
+      height: 258px;
+      width: 100%;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    &Title {
+      font-size: 22px;
+      font-weight: 600;
+      color: #02550A;
+      margin-bottom: 15px;
+    }
+    &Descr {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 25px;
+    }
+    &Content {
+      padding: 20px 25px 25px;
+      background-color: #F3F6E7;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      flex: 1;
+    }
+  }
+}
